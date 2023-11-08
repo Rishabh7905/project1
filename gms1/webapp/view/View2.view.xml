@@ -1,0 +1,112 @@
+<mvc:View xmlns:mdc="sap.ui.mdc" xmlns:semantic="sap.m.semantic" xmlns:core="sap.ui.core" controllerName="gms1.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:f = "sap.ui.layout.form"
+        xmlns:tnt="sap.tnt" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+            <tnt:ToolHeader id="_IDGenToolHeader1">
+        <Button id="_IDGenButton1" icon="sap-icon://home" type="Transparent" press=".onHomePress">
+            <layoutData>
+                <OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData1" priority="NeverOverflow" />
+            </layoutData>
+        </Button>
+        <IconTabHeader
+            id="iconTabHeader"
+            selectedKey="invalidKey"
+            select=".onSelectTab"
+            backgroundDesign="Transparent"
+            mode="Inline" class = "design">
+            <layoutData>
+                <OverflowToolbarLayoutData id="_IDGenOverflowToolbarLayoutData2" priority="NeverOverflow" shrinkable="true" />
+            </layoutData>
+            <items >
+                <IconTabFilter id="_IDGenIconTabFilter1" text="Toggle Selection view" />
+                <IconTabFilter id="_IDGenIconTabFilter2" text="Display Change" />
+                <IconTabFilter id="_IDGenIconTabFilter3" text="Create" />
+                <IconTabFilter id="_IDGenIconTabFilter4" text="Worklist" />
+                <IconTabFilter id="_IDGenIconTabFilter5" text="Validate" />
+                <IconTabFilter id="_IDGenIconTabFilter6" text="Shedule*Confirm" />
+                <IconTabFilter id="_IDGenIconTabFilter7" text="Changes" />
+                <IconTabFilter id="_IDGenIconTabFilter8" text="Personal Setting" />
+                <IconTabFilter id="_IDGenIconTabFilter9" text="More" >
+                </IconTabFilter>
+            </items>
+        </IconTabHeader>
+    </tnt:ToolHeader>
+ 
+    <!-- <l:Splitter id="_IDGenSplitter1" height="500px">
+            <semantic:DetailPage id="_IDGenDetailPage1" ></semantic:DetailPage>
+            <semantic:MasterPage id="_IDGenMasterPage1" >
+            <IconTabHeader id="_IDGenIconTabHeader1" >
+                <items>
+                <IconTabFilter id="_IDGenIconTabFilter11" text="Toggle Selection view" />
+                <IconTabFilter id="_IDGenIconTabFilter22" text="Display Change" />
+                <IconTabFilter id="_IDGenIconTabFilter33" text="Create" />
+                <IconTabFilter id="_IDGenIconTabFilter44" text="Worklist" />
+                <IconTabFilter id="_IDGenIconTabFilter55" text="Validate" />
+                <IconTabFilter id="_IDGenIconTabFilter66" text="Shedule*Confirm" />
+                <IconTabFilter id="_IDGenIconTabFilter77" text="Changes" />
+                <IconTabFilter id="_IDGenIconTabFilter88" text="Personal Setting" />
+                <IconTabFilter id="_IDGenIconTabFilter99" text="More" >
+                </IconTabFilter>
+            </items>
+            </IconTabHeader>
+            <f:SimpleForm id="_IDGenSimpleForm1" >
+            <f:content>
+            <VBox id="box1">
+            <Label id="_IDGenLabel1" text = "Nomination Key"/>
+            <Input id="_IDGenInput1" width="80%" />
+            <Label id="_IDGenLabel2" text = "Nomination no"/>
+            <Input id="_IDGenInput2" width="80%" />
+            <Label id="_IDGenLabel3" text = "Vehicle Number"/>
+            <Input id="_IDGenInput3" width="50%" />
+            <Label id="_IDGenLabel4" text = "Carrier"/>
+            <Input id="_IDGenInput4" width="50%" />
+            <Label id="_IDGenLabel5" text = "Shipper"/>
+            <Input id="_IDGenInput5" width="50%" />
+            </VBox>
+            <VBox id="box2">
+            <Label id="_IDGenLabel11" text = "Nomination Type"/>
+            <Input id="_IDGenInput11" width="30%" />
+            <Label id="_IDGenLabel21" text = "Trans system"/>
+            <Input id="_IDGenInput21" width="50%" />
+            </VBox>
+            <VBox id="bo3">
+            <Label id="_IDGenLabel13" text = "UoM"/>
+            <Input id="_IDGenInput13" width="30%" />
+            <Label id="_IDGenLabel23" text = "Cycle ID"/>
+            <Input id="_IDGenInput23" width="30%" />
+            <Label id="_IDGenLabel24" text = "EXT Identifier"/>
+            <Input id="_IDGenInput24" width="30%" />
+            <Label id="_IDGenLabel25" text = "Bulk shipm.type"/>
+            <Input id="_IDGenInput25" width="30%" />
+            <Label id="_IDGenLabel26" text = "Intr.plant"/>
+            <Input id="_IDGenInput26" width="30%" />
+            </VBox>
+            </f:content>
+         
+ 
+            </f:SimpleForm>
+            <f:SimpleForm id="_IDGenSimpleForm2">
+            <f:content>
+            <Label id="_IDGenLabel12" text = "Nomination Key"/>
+            <Input id="_IDGenInput12" width="30%" />
+            <Label id="_IDGenLabel22" text = "Nomination no"/>
+            <Input id="_IDGenInput22" width="30%" />
+            <Label id="_IDGenLabel32" text = "Vehicle Number"/>
+            <Input id="_IDGenInput32" width="20%" />
+            <Label id="_IDGenLabel42" text = "Carrier"/>
+            <Input id="_IDGenInput42" width="20%" />
+            <Label id="_IDGenLabel52" text = "Shipper"/>
+            <Input id="_IDGenInput52" width="20%" />
+            <Label id="_IDGenLabel62" text = "Nomination Key"/>
+            <Input id="_IDGenInput62" width="30%" />
+            <Label id="_IDGenLabel72" text = "Nomination Key"/>
+            <Input id="_IDGenInput72" width="30%" />
+            </f:content>
+            </f:SimpleForm>
+            </semantic:MasterPage>
+           
+    </l:Splitter> -->
+ 
+    </Page>
+</mvc:View>

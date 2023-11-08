@@ -1,0 +1,176 @@
+<mvc:View xmlns:form="sap.ui.layout.form" xmlns:cards="sap.f.cards" controllerName="gms.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m"
+	xmlns:custom="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1">
+	
+    <Page id="page" title="{i18n>title}">
+
+	<!-- <Header id="_IDGenContainer1" class = "design"> -->
+       <Button id="_IDGenButton1" text="toggle selection view" class="design1"></Button>
+        <Button id="_IDGenButton2" text="display change" press="onPress"></Button>
+         <Button id="_IDGenButton3" text="create"></Button>
+          <Button id="_IDGenButton4" text="worklist"></Button>
+           <Button id="_IDGenButton5" text="schedule+confirm"></Button>
+            <Button id="_IDGenButton6" text="validate"></Button>
+             <Button id="_IDGenButton7" text="changes"></Button>
+              <Button id="_IDGenButton8" text="personal setting"></Button>
+               <Button id="_IDGenButton9" text="more"></Button>
+      <!-- </Header> -->
+
+<Page id="_IDGenPage1">
+      <SplitApp
+		id="SplitAppDemo"
+		initialDetail="detail"
+		initialMaster="master">
+		<detailPages>
+			<Page id="_IDGenPage2">
+			<Button id="_IDGenButton11" text="toggle selection view"></Button>
+        <Button id="_IDGenButton22" text="display change" press="onPress"></Button>
+         <Button id="_IDGenButton31" text="create"></Button>
+          <Button id="_IDGenButton41" text="worklist"></Button>
+           <Button id="_IDGenButton51" text="schedule+confirm"></Button>
+            <Button id="_IDGenButton61" text="validate"></Button>
+             <Button id="_IDGenButton71" text="changes"></Button>
+              <Button id="_IDGenButton81" text="personal setting"></Button>
+               <Button id="_IDGenButton91" text="more"></Button>
+				
+				<!-- <Label id="_IDGenLabel1" text="Detail page 1" /> -->
+				<!-- <Button id="_IDGenButton10" text="Go to Detail page2" press=".onPressNavToDetail" /> -->
+			
+		 <!-- <f:SimpleForm id="SimpleFormToolbar"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="4"
+			labelSpanL="3"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="4"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false"
+			ariaLabelledBy="Title1" >
+<f:toolbar>
+<Toolbar id="TB1">
+<Title id="Title1" text="Address"/>
+<ToolbarSpacer id="_IDGenToolbarSpacer1" />
+<Button id="_IDGenButton10" icon="sap-icon://settings"/>
+<Button id="_IDGenButton111" icon="sap-icon://drop-down-list" />
+</Toolbar>
+</f:toolbar>
+<f:content>
+<Toolbar id="_IDGenToolbar1" ariaLabelledBy="Title2">
+<Title id="Title2" text="Office"/>
+<ToolbarSpacer id="_IDGenToolbarSpacer2" />
+<Button id="_IDGenButton12" icon="sap-icon://settings"/>
+</Toolbar>
+<Label id="_IDGenLabel1" text="Name" />
+<Input id="_IDGenInput6" value="{SupplierName}" />
+<Label id="_IDGenLabel2" text="Street/No." />
+<Input id="_IDGenInput7" value="{Street}">
+</Input>
+<Input id="_IDGenInput8" value="{HouseNumber}">
+<layoutData>
+<l:GridData id="_IDGenGridData1" span="XL2 L1 M3 S4" />
+</layoutData>
+</Input>
+<Label id="_IDGenLabel3" text="ZIP Code/City" />
+<Input id="_IDGenInput9" value="{ZIPCode}">
+<layoutData>
+<l:GridData id="_IDGenGridData2" span="XL2 L1 M3 S4" />
+</layoutData>
+</Input>
+<Input id="_IDGenInput10" value="{City}" />
+<Label id="_IDGenLabel4" text="Country" />
+<Select id="country" selectedKey="{Country}">
+<items>
+<core:Item id="_IDGenItem1" text="England" key="England"/>
+<core:Item id="_IDGenItem2" text="Germany" key="Germany"/>
+<core:Item id="_IDGenItem3" text="USA" key="USA"/>
+</items>
+</Select>
+<Toolbar id="_IDGenToolbar2" ariaLabelledBy="Title3">
+<Title id="Title3" text="Online"/>
+<ToolbarSpacer id="_IDGenToolbarSpacer3" />
+<Button id="_IDGenButton13" icon="sap-icon://settings"/>
+</Toolbar>
+<Label id="_IDGenLabel5" text="Web" />
+<Input id="_IDGenInput11" value="{Url}" type="Url" />
+<Label id="_IDGenLabel6" text="Twitter" />
+<Input id="_IDGenInput12" value="{Twitter}" />
+</f:content>
+</f:SimpleForm>
+       -->
+			
+			
+			</Page>
+			<Page
+				id="detailDetail"
+				title="Detail Detail"
+				backgroundDesign= "Solid"
+				showNavButton="true"
+				navButtonPress=".onPressDetailBack">
+				<!-- <VBox id="_IDGenVBox1" class="sapUiSmallMargin">
+					<Label id="_IDGenLabel2" text="This is Detail Page2" />
+					<Text id="_IDGenText1" text="Here you could change the Split Application mode. After the mode change, resize the browser window to see the difference in the master form behaviour." />
+					<RadioButtonGroup id="_IDGenRadioButtonGroup1" columns="1" width="500px" class="sapUiMediumMarginBottom" select=".onPressModeBtn">
+						<RadioButton id="RB1-1" text="show/hide" selected="true" custom:splitAppMode="ShowHideMode" />
+						<RadioButton id="RB1-2" text="stretch/compress" custom:splitAppMode="StretchCompressMode" />
+						<RadioButton id="RB1-3" text="hide" custom:splitAppMode="HideMode" />
+						<RadioButton id="RB1-4" text="popover" custom:splitAppMode="PopoverMode" />
+					</RadioButtonGroup>
+				</VBox> -->
+			</Page>
+			<Page
+				id="detail2"
+				title="Detail 3 Page"
+				backgroundDesign= "Solid"
+				showNavButton="true"
+				navButtonPress=".onPressDetailBack">
+				<!-- <Label id="_IDGenLabel3" text="This is Detail Page3" />
+				<Input id="_IDGenInput1"/>
+				<Label id="_IDGenLabel4" text="Label 2" />
+				<Input id="_IDGenInput2"/>
+				<Label id="_IDGenLabel5" text="Label 3" />
+				<Input id="_IDGenInput3"/>
+				<Label id="_IDGenLabel6" text="Label 4" />
+				<Input id="_IDGenInput4"/>
+				<Label id="_IDGenLabel7" text="Label 5" /> -->
+				<Input id="_IDGenInput5"/>
+			</Page>
+		</detailPages>
+		<masterPages>
+			<Page
+				id="master"
+				title="Master 1"
+				backgroundDesign= "List">
+				<List id="_IDGenList1">
+					<StandardListItem id="_IDGenStandardListItem1" title="To Master2" type="Navigation" press=".onPressGoToMaster" />
+				</List>
+			</Page>
+			<Page
+				id="master2"
+				title="Master 2"
+				backgroundDesign="List"
+				showNavButton="true"
+				navButtonPress=".onPressMasterBack">
+				<List id="_IDGenList2" itemPress=".onListItemPress">
+					<items>
+						<StandardListItem id="_IDGenStandardListItem2" title="To Detail 1" type="Active" custom:to="detail" />
+						<StandardListItem id="_IDGenStandardListItem3" title="To Detail 2" type="Active" custom:to="detailDetail" />
+						<StandardListItem id="_IDGenStandardListItem4" title="To Detail 3" type="Active" custom:to="detail2" />
+					</items>
+				</List>
+			</Page>
+		</masterPages>
+	</SplitApp>
+      
+</Page>
+
+</Page>
+
+</mvc:View>

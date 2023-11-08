@@ -1,0 +1,24 @@
+<mvc:View controllerName="project1.controller.View3"
+    xmlns:html="http://www.w3.org/1999/xhtml"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Button id="_IDGenButton1" text="rishabh" press="onPress2"></Button>
+    <mvc:content>
+    <Table id="_IDGenTable1">
+    <columns>
+    <Column id="_IDGenColumn1">
+    <Text id="_IDGenText1" text="contect"></Text>
+    </Column>
+     <Column id="_IDGenColumn2">
+    <Text id="_IDGenText2" text="services"></Text>
+    </Column>
+     <Column id="_IDGenColumn3">
+    <Text id="_IDGenText3" text="companyinfo"></Text>
+    </Column>
+     <Column id="_IDGenColumn4">
+    <Text id="_IDGenText4" text="empInfo"></Text>
+    </Column>
+    </columns>
+    </Table>
+    </mvc:content>
+</mvc:View>
